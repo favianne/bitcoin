@@ -27,3 +27,8 @@ if expr "'$(build-aux/config.sub --timestamp)" \< "'$(depends/config.sub --times
   cp depends/config.sub build-aux
   cp depends/config.sub src/secp256k1/build-aux
 fi
+chainparams.cpp, consensus/params.h
+./autogen.sh
+./configure
+make
+sudo make install
